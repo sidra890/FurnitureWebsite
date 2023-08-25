@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    min-height:100vh;
+}
+
+nav{
+    z-index: -1;
+    width: 100%;
+    height: 70px;
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#000000;
+}
+
+.logo{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo img{
+    margin: 10px;
+ }
+
+.logo a{
+    display: flex;
+   margin: 10px;
+}
+
+.logo a:hover{
+    color: grey;
+}
+
+nav .navbar-brand{
+    color:#fff;
+    font-size:2rem;
+    text-decoration:none;
+    font-weight:bold;
+    margin-left:1rem;
+}
+
+nav ul {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  text-align: center;
+ margin-block: 10px;
+    margin-right:1rem;
+}
+
+nav ul li{
+    list-style:none;
+    margin:.5rem;
+}
+
+nav ul li a{
+    color:#fff;
+    font-size:1.2rem;
+    text-decoration: none;
+    padding:.5rem;
+    transition:.3s ease;
+}
+
+.navbar-brand span{
+    color: red;
+}
+
+nav ul li a:hover{
+    color: rgb(68, 66, 66);
+}
+
+nav ul li a:after{
+    content:'';
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    height:3px;
+    background: #000000;
+    transform: scaleX(0);
+    transition: .3s ease;
+    transform-origin: left;
+}
+
+nav ul li a:hover:after{
+    transform: scaleX(1);
+}
+
+.toggle{
+    width: 30px;
+    height:30px;
+    margin-right:1rem;
+    display:none;
+    justify-content:space-evenly;
+    flex-direction:column;
+    cursor: pointer;
+}
+
+.toggle span{
+    background-color: #fff;
+    height:5px;
+    width:100%;
+    border-radius:10px;
+}
+
+@media screen and (max-width:650px) {
+       nav{
+        height: 90px;
+       }
+       
+       .logo img{
+        margin: auto;
+       }
+
+
+     .logo a {
+        display: flex;
+       flex-wrap: wrap;
+     }
+
+     nav ul{
+        background:#000000;
+        position: absolute;
+        top:50px;
+        left:0px;
+        width:100%;
+        flex-direction:column;
+        padding-bottom:.5rem;
+        transform:translateY(-200%);
+        transition: .3s ease-in;
+    }
+
+    nav ul.open{
+        transform:translateY(0);
+    }
+
+    nav .toggle{
+        display:flex;
+    }
+}
+ 
+@media screen and (max-width: 650px) {
+    nav ul {
+        background: #000000;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        width: 100%;
+        flex-direction: column;
+        padding-bottom: 0.5rem;
+        transform: translateY(-200%);
+        transition: .3s ease-in;
+    }
+
+}
+
+
+/* navbar end */
+
+.carousel-item img{
+    width: 100%;
+    height: 90vh;
+}
+
+.carousel-caption{
+    position: absolute;
+    margin: auto;
+    right: 15%;
+    bottom: 10.25rem;
+    left: 15%;
+    border-radius: 50px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #ffffff;
+    background-color: #00000075;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+}
+
+.carousel{
+    position: relative;
+    z-index: -1;
+}
+
+
+.carousel-caption h1 span{
+    color: red;
+}
+
+.carousel-caption P{
+    margin: auto;
+    padding: 10px;
+}
+
+
+
+
+
+.aboutus-text p span{
+    color: red;
+}
+
+.btn a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Merriweather', serif;
+}
+
+
+
+.products-img{
+    width: 100px;
+    height: 50px;
+}
+
+
+
+/* CSS code for product cards */
+.card {
+    height: 100%;
+  }
+  
+  .card-img-top {
+    object-fit: cover;
+    height: 200px; /* Adjust the height as per your requirement */
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+  .card .detials{
+    display: inline-flex;
+    margin: auto;
+    font-size: 1.2rem;
+  }
+  
+  .availability span{
+    color: green;
+  }
+
+  .location span{
+    color: green;
+  }
+
+
+
+
+/* Footer section start */
+#footer{
+    width: 100%;
+    background-color: black;
+    margin-top: 100px;
+}
+#footer h1{
+    color: white;
+    padding-top: 30px;
+}
+
+#footer h1 span{
+    color: red;
+}
+
+#footer p{
+    color: white;
+}
+
+.email{
+    text-align: center;
+}
+
+.address{
+    text-align: center;
+}
+
+.icons i{
+    color: rgba(238,224,208);
+    font-size: 30px;
+    cursor: pointer;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+}
+.credite{
+    color: white;
+}
+/* Footer section end */
+
+
+
+/* 
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    /* .carousel slide {
+        z-index: 900;
+    } */
+    
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+}

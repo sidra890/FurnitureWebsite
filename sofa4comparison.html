@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Furniture Store</title>
+    <meta name="FK Royal Furniture" content="Discover a world of elegant and high-quality furniture that will transform your living space into a haven of comfort and style. At Our Furniture Shop, we offer a wide range of furniture options to suit every taste and budget."/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <style>
+        td>img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+        }
+    </style>
+    
+</head>
+
+<body>
+ <!-- navbar start -->
+ <nav>
+  <div class="logo">
+    <img src="./images/Durable Furniture logo.png" alt="logo" style="width: 80px; height: 50px;">
+  <a href="#" class="navbar-brand"><span>Durable</span> Furniture</a>
+  </div>
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="#aboutus">ABOUT US</a></li>
+    <li><a href="Products.html">PRODUCTS</a></li>
+    <li><a href="contact.html">CONTACT US</a></li>
+  </ul>
+  <div class="toggle"><span></span><span></span><span></span></div>
+</nav>
+
+<script>
+  const toggleBtn = document.querySelector('.toggle')
+  const menu = document.querySelector('nav ul')
+  toggleBtn.onclick = () => menu.classList.toggle('open')
+</script>
+
+<!-- navbar end -->
+
+
+    <h1 class="display-5 my-5 text-center">Products Comparison</h1>
+    <div class="container">
+        <div class="col-md-9 mx-auto">
+            <table class="table">
+                <tr class="bg-light">
+                    <th>Select Product</th>
+                    <th width="300px">
+                        <select class="form-control" id="select1" onchange="item1(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                    <th width="300px">
+                        <select class="form-control" id="select2" onchange="item2(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Product Image</th>
+                    <td>
+                        <img src="./sofa images/sofa4.png"
+                            id="img1" alt=" ">
+                    </td>
+                    <td>
+                        <img src="./sofa images/sofa5.png"
+                            id="img2" alt=" ">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Product Price</th>
+                    <td id="price1">$149.99</td>
+                    <td id="price2">$138.99</td>
+                </tr>
+                <tr>
+                    <th>Product Description</th>
+                    <td id="desc1">The L Shape Sofa is a versatile and space-saving furniture option that adds functionality to your living room. Its unique design allows for customizable seating arrangements, making it perfect for both small and large spaces. The sofa features a modern and contemporary style that complements various interior aesthetics. With its ergonomic design and plush cushioning, the L Shape Sofa offers optimal comfort for lounging and socializing. This sofa is available in a range of materials and colors, allowing you to personalize your living space with ease.</td>
+                    <td id="desc2">The Kessel Sofa is a stylish and sophisticated choice for modern living rooms. Its clean lines, minimalistic design, and sleek silhouette create a chic and contemporary look. Crafted with attention to detail, the Kessel Sofa offers exceptional comfort and durability. It is upholstered in high-quality fabric or leather, ensuring both style and longevity. The sofa's cushioning provides optimal support, making it an inviting seating option for relaxation and entertainment. Elevate your living room with the sleek elegance of the Kessel Sofa.</td>
+                </tr>
+                <tr>
+                    <th>Product Brand</th>
+                    <td id="brand1">OAKWOOD Furniture</td>
+                    <td id="brand2">HABBIT Furniture</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js "></script>
+</body>
+
+</html>
+
+<script src="data.js"></script>
+<script src="main.js"></script>

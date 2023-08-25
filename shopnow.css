@@ -1,0 +1,309 @@
+*{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product-details {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.product-image img:hover {
+  transform: scale(1.05);
+}
+
+.product-info {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.product-info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.product-info h1:hover{
+  color: #414243;
+}
+
+
+
+.product-info h1 span {
+  font-weight: bold;
+  color: #c0392b;
+}
+
+.product-info p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+h3 span{
+  color: #272829;
+}
+
+h4 span{
+  color: green;
+}
+
+.location span{
+  color: rgb(47, 104, 21);
+}
+
+.product-info h3,
+.product-info h4 {
+  margin-bottom: 10px;
+}
+
+.similar-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.product img {
+  width: 100%;
+}
+
+.product h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.product p.price {
+  font-weight: bold;
+}
+
+
+
+.product p.instock span {
+  color: green;
+}
+
+.product p.outstock span {
+  color: red;
+}
+
+.location span{
+  color: darkgreen;
+}
+
+.view-more {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.view-more:hover {
+  background-color: #414243;
+  color: white;
+}
+
+
+ /* Existing CSS styles */
+
+.download-button {
+display: inline-block;
+padding: 10px 20px;
+background-color: #000000;
+color: #ffffff;
+text-decoration: none;
+border-radius: 3px;
+transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+background-color: #414243;
+color: white;
+}
+
+
+.comparison-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.comparison-button:hover {
+  background-color: #c0392b;
+  color: white;
+}
+
+
+
+
+/* Responsive Styles */
+
+@media (max-width: 767px) {
+/* Small devices */
+.product-info {
+  text-align: center;
+}
+
+.download-button {
+  margin-top: 10px;
+}
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 575.98px) {
+/* Extra Small devices (up to 575.98px) */
+.container {
+  padding: 10px;
+}
+
+.product-details {
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.product-info {
+  padding: 10px;
+}
+
+.similar-products {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.product {
+  padding: 5px;
+}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+/* Small devices (576px - 767.98px) */
+.container {
+  padding: 15px;
+}
+
+.similar-products {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 15px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+/* Medium devices (768px - 991.98px) */
+.container {
+  padding: 20px;
+}
+
+.similar-products {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+/* Large devices (992px - 1199.98px) */
+.container {
+  padding: 25px;
+}
+
+.similar-products {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 25px;
+}
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+/* Larger devices (1200px - 1399.98px) */
+.container {
+  padding: 30px;
+}
+
+.similar-products {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+}
+
+@media (min-width: 1400px) and (max-width: 1599.98px) {
+/* XL devices (1400px - 1599.98px) */
+.container {
+  padding: 35px;
+}
+
+.similar-products {
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 35px;
+}
+}
+
+@media (min-width: 1600px) and (max-width: 1919.98px) {
+/* XXL devices (1600px - 1919.98px) */
+.container {
+  padding: 40px;
+}
+
+.similar-products {
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 40px;
+}
+}
+
+@media (min-width: 1920px) {
+/* XXL devices (1920px and larger) */
+.container {
+  padding: 45px;
+}
+
+.similar-products {
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  grid-gap: 45px;
+}
+}

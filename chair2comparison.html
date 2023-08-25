@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Furniture Store</title>
+    <meta name="FK Royal Furniture" content="Discover a world of elegant and high-quality furniture that will transform your living space into a haven of comfort and style. At Our Furniture Shop, we offer a wide range of furniture options to suit every taste and budget."/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <style>
+        td>img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+        }
+    </style>
+    
+</head>
+
+<body>
+ <!-- navbar start -->
+ <nav>
+  <div class="logo">
+    <img src="./images/Durable Furniture logo.png" alt="logo" style="width: 80px; height: 50px;">
+  <a href="#" class="navbar-brand"><span>Durable</span> Furniture</a>
+  </div>
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="#aboutus">ABOUT US</a></li>
+    <li><a href="Products.html">PRODUCTS</a></li>
+    <li><a href="contact.html">CONTACT US</a></li>
+  </ul>
+  <div class="toggle"><span></span><span></span><span></span></div>
+</nav>
+
+<script>
+  const toggleBtn = document.querySelector('.toggle')
+  const menu = document.querySelector('nav ul')
+  toggleBtn.onclick = () => menu.classList.toggle('open')
+</script>
+
+<!-- navbar end -->
+
+
+    <h1 class="display-5 my-5 text-center">Products Comparison</h1>
+    <div class="container">
+        <div class="col-md-9 mx-auto">
+            <table class="table">
+                <tr class="bg-light">
+                    <th>Select Product</th>
+                    <th width="300px">
+                        <select class="form-control" id="select1" onchange="item1(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                    <th width="300px">
+                        <select class="form-control" id="select2" onchange="item2(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Product Image</th>
+                    <td>
+                        <img src="./chairs images/chair2.jpg"
+                            id="img1" alt=" ">
+                    </td>
+                    <td>
+                        <img src="./chairs images/chair3.jpg"
+                            id="img2" alt=" ">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Product Price</th>
+                    <td id="price1">$159.99</td>
+                    <td id="price2">$139.99</td>
+                </tr>
+                <tr>
+                    <th>Product Description</th>
+                    <td id="desc1">The Modern Comfort chair offers a contemporary twist on traditional comfort. With its sleek lines and modern design, this chair adds a touch of sophistication to any space. The combination of high-quality materials and expert craftsmanship ensures both durability and style. The Modern Comfort chair features padded armrests and a cushioned seat, providing a cozy and relaxing seating experience. Whether you're entertaining guests or enjoying some quiet time, this chair is the perfect companion. Embrace the modern aesthetic and indulge in the luxurious comfort of the Modern Comfort chair.</td>
+                    <td id="desc2">The Minimalist Lounge chair embodies simplicity and elegance. With its clean lines and minimalist design, this chair exudes a sense of calm and sophistication. The sleek silhouette and streamlined structure make it a versatile choice for various interior styles. The Minimalist Lounge chair is crafted with premium materials, ensuring both comfort and durability. Its ergonomic design provides optimal support for your body, making it an ideal spot for relaxation. Whether you place it in the living room, study, or lounge area, this chair effortlessly blends functionality and style. Experience the beauty of minimalism with the Minimalist Lounge chair.</td>
+                </tr>
+                <tr>
+                    <th>Product Brand</th>
+                    <td id="brand1">OAKWOOD Furniture</td>
+                    <td id="brand2">DURIAN Furniture</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js "></script>
+</body>
+
+</html>
+
+<script src="data.js"></script>
+<script src="main.js"></script>

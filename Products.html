@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="productsstyle.css">
+</head>
+
+<body>
+  <!-- navbar start -->
+  <nav>
+    <div class="logo">
+      <img src="./images/Durable Furniture logo.png" alt="logo" style="width: 80px; height: 50px;">
+      <a href="#" class="navbar-brand"><span>Durable</span> Furniture</a>
+    </div>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="#aboutus">ABOUT US</a></li>
+      <li><a href="Products.html">PRODUCTS</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+    <div class="toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle')
+    const menu = document.querySelector('nav ul')
+    toggleBtn.onclick = () => menu.classList.toggle('open')
+  </script>
+
+  <!-- navbar end -->
+  <h1 class="page-heading">Welcome to <span>My Furniture</span> Store</h1>
+
+  <div class="filters">
+    <button class="brand-button" onclick="filterProducts('all')">All Brands</button>
+    <button class="brand-button" id="brand1" onclick="filterProducts('brand1')">DURIAN Furniture</button>
+    <button class="brand-button" id="brand2" onclick="filterProducts('brand2')">HABBIT Furniture</button>
+    <button class="brand-button" id="brand3" onclick="filterProducts('brand3')">OAKWOOD Furniture</button>
+  </div>
+
+  <div class="products">
+    <div class="product brand1">
+      <img src="./sofa images/sofa1.png" alt="Product 1">
+      <div class="details">
+        <h2>Simple Comfort Sofa</h2>
+        <p>Offers a perfect balance between style and comfort, with clean lines and contemporary design</p>
+      </div>
+      <div class="prices">
+        <p>Price: $99.99</p>
+        <p class="instock">Availability: <span>In Stock</span></p>
+        <p class="location">Location: <span>Karachi</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="sofa1.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand2">
+      <img src="./chairs images/chair1.jpg" alt="Product 2">
+      <div class="details">
+        <h2>Comfort Seat</h2>
+        <p>The Comfort Seat is a chair designed to prioritize your relaxation comfort and also the luxurious comfort</p>
+      </div>
+      <div class="prices">
+        <p>Price: $99.99</p>
+        <p class="instock">Availability: <span>In Stock</span></p>
+        <p class="location">Location: <span>Lahore</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="chair1.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand1">
+      <img src="./workdesk images/workdesk1.jpg" alt="Product 3">
+      <div class="details">
+        <h2>Computer Wilson Table</h2>
+        <p>The Computer Wilson Table is a sleek and modern desk designed specifically for computer use.</p>
+      </div>
+      <div class="prices">
+        <p>Price: $149.99</p>
+        <p class="instock">Availability: <span>In Stock</span></p>
+        <p class="location">Location: <span>Karachi</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="workdesk1.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand3">
+      <img src="./chairs images/chair2.jpg" alt="Product 4">
+      <div class="details">
+        <h2>Modern Comfort</h2>
+        <p>The Modern Comfort chair is a fusion of contemporary design and exceptional comfort.</p>
+      </div>
+      <div class="prices">
+        <p>Price: $159.99</p>
+        <p class="instock">Availability: <span>In Stock</span></p>
+        <p class="location">Location: <span>Karachi</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="chair2.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand2">
+      <img src="./sofa images/sofa2.jpg" alt="Product 5">
+      <div class="details">
+        <h2>Modern Minimalist Sofa</h2>
+        <p>Sleek and stylish, featuring a minimalist design with clean angles and a streamlined silhouette.</p>
+      </div>
+      <div class="prices">
+        <p>Price: $159.99</p>
+        <p class="instock">Availability: <span>In Stock</span></p>
+        <p class="location">Location: <span>Multan</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="sofa2.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand1">
+      <img src="./workdesk images/workdesk2.png" alt="Product 6">
+      <div class="details">
+        <h2>Sydney Study Desk</h2>
+        <p>The Sydney Study Desk is a stylish and practical table, ideal for study or work purposes.</p>
+      </div>
+      <div class="prices">
+        <p>Price: $159.99</p>
+        <p class="instock">Availability: <span>In Stock</span></p>
+        <p class="location">Location: <span>Multan</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="workdesk2.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand1">
+      <img src="./sofa images/sofa3.png" alt="Product 7">
+      <div class="details">
+        <h2>Noble Sofa</h2>
+        <p>Luxurious statement piece with intricate detailing, tufted upholstery, and carved wooden accents.</p>
+      </div>
+      <div class="prices">
+        <p>Price: $139.99</p>
+        <p class="instock">Availability: <span>In Stock</span></p>
+        <p class="location">Location: <span>Karachi</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="sofa3.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand2">
+      <img src="./workdesk images/workdesk3.png" alt="Product 8">
+      <div class="details">
+        <h2>Austen Study Table</h2>
+        <p>The Austen Study Table is a beautifully crafted piece of furniture designed for studying and working.</p>
+      </div>
+      <div class="prices">
+        <p>Price: $139.99</p>
+        <p class="instock">Availability: <span>In Stock</span></p>
+        <p class="location">Location: <span>Multan</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="workdesk3.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand3">
+      <img src="./sofa images/sofa4.png" alt="Product 9">
+      <div class="details">
+        <h2>L Shape Sofa</h2>
+        <p>Versatile and space-saving, allowing for customizable seating arrangements.</p>
+      </div>
+      <div class="prices">
+        <p>Price: $149.99</p>
+        <p class="outstock">Availability: <span>Out of Stock</span></p>
+        <p class="location">Location: <span>Karachi</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="sofa4.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand1">
+      <img src="./chairs images/chair3.jpg" alt="Product 10">
+      <div class="details">
+        <h2>Minimalist Lounge</h2>
+        <p>The Minimalist Lounge chair is a testament to simplicity and elegance.</p>
+      </div>
+      <div class="prices">
+        <p>Price: $139.99</p>
+        <p class="instock">Availability: <span>In Stock</span></p>
+        <p class="location">Location: <span>Lahore</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="chair3.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand2">
+      <img src="./workdesk images/workdesk4.png" alt="Product 11">
+      <div class="details">
+        <h2>Fresco Study Table</h2>
+        <p>It is a functional desk that combines style with functionality.</p>
+      </div>
+      <div class="prices">
+        <p>Price: $99.99</p>
+        <p class="outstock">Availability: <span>Out of Stock</span></p>
+        <p class="location">Location: <span>Multan</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="workdesk4.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand3">
+      <img src="./chairs images/chair4.jpg" alt="Product 12">
+      <div class="details">
+        <h2>Simple Accent Chair</h2>
+        <p>It is a versatile piece that adds a touch of style to any room.</p>
+      </div>
+      <div class="prices">
+        <p>Price: $149.99</p>
+        <p class="outstock">Availability: <span>Out of Stock</span></p>
+        <p class="location">Location: <span>Multan</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="chair4.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand2">
+      <img src="./sofa images/sofa5.png" alt="Product 13">
+      <div class="details">
+        <h2>Kessel Sofa</h2>
+        <p>The Kessel Sofa is a stylish and sophisticated choice for modern living rooms.</p>
+      </div>
+      <div class="prices">
+        <p>Price: $138.99</p>
+        <p class="instock">Availability: <span>In Stock</span></p>
+        <p class="location">Location: <span>Karachi</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="sofa5.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand3">
+      <img src="./workdesk images/workdesk5.jpg" alt="Product 14">
+      <div class="details">
+        <h2>Topwell Compact Desk</h2>
+        <p>The Topwell Compact Desk is designed for those with limited space or a preference for compact furniture.</p>
+      </div>
+      <div class="prices">
+        <p>Price: $138.99</p>
+        <p class="instock">Availability: <span>In Stock</span></p>
+        <p class="location">Location: <span>Lahore</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="workdesk5.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand2">
+      <img src="./sofa images/sofa6.jpg" alt="Product 15">
+      <div class="details">
+        <h2>Astor Sofa</h2>
+        <p>Combines comfort and elegance, with a timeless design blending traditional and contemporary elements.</p>
+      </div>
+      <div class="prices">
+        <p>Price: $188.99</p>
+        <p class="instock">Availability: <span>In Stock</span></p>
+        <p class="location">Location: <span>Multan</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="sofa6.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand1">
+      <img src="./chairs images/chair5.jpg" alt="Product 16">
+      <div class="details">
+        <h2>Cozy Lounge Chair</h2>
+        <p>The Cozy Lounge Chair is all about creating a cozy and inviting atmosphereand also all about comfort.</p>
+      </div>
+      <div class="prices">
+        <p class="price">Price: $138.99</p>
+        <p class="instock">Availability: <span>In Stock</span></p>
+        <p class="location">Location: <span>Lahore</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="chair5.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand1">
+      <img src="./sofa images/sofa7.png" alt="Product 17">
+      <div class="details">
+        <h2>Urban Chair Sofa</h2>
+        <p>The Urban Chair Sofa is a modern and chic seating option that combines style and comfort effortlessly.</p>
+      </div>
+      <div class="prices">
+        <p class="price">Price: $169.99</p>
+        <p class="outstock">Availability: <span>Out of Stock</span></p>
+        <p class="location">Location: <span>Multan</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="sofa7.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand3">
+      <img src="./chairs images/chair6.jpg" alt="Product 18">
+      <div class="details">
+        <h2>Classic Chair</h2>
+        <p>The Classic Chair embodies timeless elegance and sophistication. With its traditional design.</p>
+      </div>
+      <div class="prices">
+        <p class="price">Price: $188.99</p>
+        <p class="instock">Availability: <span>In Stock</span></p>
+        <p class="location">Location: <span>Multan</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="chair6.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand2">
+      <img src="./workdesk images/workdesk6.png" alt="Product 19">
+      <div class="details">
+        <h2>Morris Study Table</h2>
+        <p>The Morris Study Table is a classic and timeless desk that blends seamlessly with various interior styles.
+        </p>
+      </div>
+      <div class="prices">
+        <p class="price">Price: $188.99</p>
+        <p class="instock">Availability: <span>In Stock</span></p>
+        <p class="location">Location: <span>Lahore</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="workdesk6.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand1">
+      <img src="./sofa images/sofa8.png" alt="Product 20">
+      <div class="details">
+        <h2>Frea Sofa</h2>
+        <p>The Frea Sofa is a modern and trendy choice that brings a sense of style and sophistication to your living space.</p>
+      </div>
+      <div class="prices">
+        <p class="price">Price: $152.99</p>
+        <p class="instock">Availability: <span>In Stock</span></p>
+        <p class="location">Location: <span>Lahore</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="sofa8.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand2">
+      <img src="./chairs images/chair7.jpg" alt="Product 21">
+      <div class="details">
+        <h2>Basic Seating</h2>
+        <p>The Basic Seating chair is a no-frills option that focuses on functionality and simplicity.</p>
+      </div>
+      <div class="prices">
+        <p class="price">Price: $169.99</p>
+        <p class="outstock">Availability: <span>Out of Stock</span></p>
+        <p class="location">Location: <span>Lahore</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="chair7.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand2">
+      <img src="./chairs images/chair8.png" alt="Product 22">
+      <div class="details">
+        <h2>Relaxation Chair</h2>
+        <p>The Relaxation Chair is specifically designed to promote relaxation and tranquility.</p>
+      </div>
+      <div class="prices">
+        <p class="price">Price: $99.99</p>
+        <p class="instock">Availability: <span>In Stock</span></p>
+        <p class="location">Location: <span>Karachi</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="chair8.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand1">
+      <img src="./workdesk images/workdesk7.jpg" alt="Product 23">
+      <div class="details">
+        <h2>Willow Red Study Table</h2>
+        <p>The Willow Red Study Table is a vibrant and eye-catching desk that adds a pop of color to your study area. It features a red finish that creates a bold and energetic atmosphere.It is a vibrant and eye-catching desk.</p>
+      </div>
+      <div class="prices">
+        <p class="price">Price: $169.99</p>
+        <p class="outstock">Availability: <span>Out of Stock</span></p>
+        <p class="location">Location: <span>Lahore</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="workdesk7.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand3">
+      <img src="./sofa images/sofa9.png" alt="Product 24">
+      <div class="details">
+        <h2>Sero Sofa</h2>
+        <p>The Sero Sofa is designed for those seeking both comfort and functionality.The Sero Sofa delivers both style and comfort.Designed for comfort and functionality, with a contemporary style.</p>
+      </div>
+      <div class="prices">
+        <p class="price">Price: $129.99</p>
+        <p class="outstock">Availability: <span>Out of Stock</span></p>
+        <p class="location">Location: <span>Karachi</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="sofa9.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand2">
+      <img src="./workdesk images/workdesk8.png" alt="Product 25">
+      <div class="details">
+        <h2>Computer Table</h2>
+        <p>The Computer Table is a versatile and practical desk designed specifically for computer use.An excellent choice.</p>
+      </div>
+      <div class="prices">
+        <p class="price">Price: $152.99</p>
+        <p class="instock">Availability: <span>In Stock</span></p>
+        <p class="location">Location: <span>Karachi</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="workdesk8.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand3">
+      <img src="./chairs images/chair9.jpeg" alt="Product 26">
+      <div class="details">
+        <h2>Casual Armchair</h2>
+        <p>The Casual Armchair is the epitome of laid-back comfort and effortless style. With its relaxed design and casual vibe, this chair creates a cozy and inviting atmosphere.</p>
+      </div>
+      <div class="prices">
+        <p class="price">Price: $129.99</p>
+        <p class="outstock">Availability: <span>Out of Stock</span></p>
+        <p class="location">Location: <span>Karachi</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="chair9.html">View Details</a>
+      </div>
+    </div>
+    <div class="product brand2">
+      <img src="./workdesk images/workdesk9.jpeg" alt="Product 27">
+      <div class="details">
+        <h2>Ariel Office Desk</h2>
+        <p>The Ariel Office Desk is a professional and sophisticated desk designed for productivity in the workplace. It features a spacious and sturdy tabletop that provides ample space.</p>
+      </div>
+      <div class="prices">
+        <p class="price">Price: $129.99</p>
+        <p class="outstock">Availability: <span>Out of Stock</span></p>
+        <p class="location">Location: <span>Lahore</span></p>
+      </div>
+      <div class="view-btn">
+        <a class="view" href="workdesk9.html">View Details</a>
+      </div>
+    </div>
+
+
+
+    <!-- Add more product entries as needed -->
+  </div>
+
+  <script>
+
+    function filterProducts(brand) {
+      const products = document.querySelectorAll('.product');
+
+      products.forEach((product) => {
+        if (brand === 'all' || product.classList.contains(brand)) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    }
+
+  </script>
+</body>
+
+</html>

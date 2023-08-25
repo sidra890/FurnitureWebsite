@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Furniture Store</title>
+    <meta name="FK Royal Furniture" content="Discover a world of elegant and high-quality furniture that will transform your living space into a haven of comfort and style. At Our Furniture Shop, we offer a wide range of furniture options to suit every taste and budget."/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <style>
+        td>img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+        }
+    </style>
+    
+</head>
+
+<body>
+ <!-- navbar start -->
+ <nav>
+  <div class="logo">
+    <img src="./images/Durable Furniture logo.png" alt="logo" style="width: 80px; height: 50px;">
+  <a href="#" class="navbar-brand"><span>Durable</span> Furniture</a>
+  </div>
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="#aboutus">ABOUT US</a></li>
+    <li><a href="Products.html">PRODUCTS</a></li>
+    <li><a href="contact.html">CONTACT US</a></li>
+  </ul>
+  <div class="toggle"><span></span><span></span><span></span></div>
+</nav>
+
+<script>
+  const toggleBtn = document.querySelector('.toggle')
+  const menu = document.querySelector('nav ul')
+  toggleBtn.onclick = () => menu.classList.toggle('open')
+</script>
+
+<!-- navbar end -->
+
+
+    <h1 class="display-5 my-5 text-center">Products Comparison</h1>
+    <div class="container">
+        <div class="col-md-9 mx-auto">
+            <table class="table">
+                <tr class="bg-light">
+                    <th>Select Product</th>
+                    <th width="300px">
+                        <select class="form-control" id="select1" onchange="item1(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                    <th width="300px">
+                        <select class="form-control" id="select2" onchange="item2(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Product Image</th>
+                    <td>
+                        <img src="./sofa images/sofa7.png"
+                            id="img1" alt=" ">
+                    </td>
+                    <td>
+                        <img src="./sofa images/sofa8.png"
+                            id="img2" alt=" ">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Product Price</th>
+                    <td id="price1">$169.99</td>
+                    <td id="price2">$152.99</td>
+                </tr>
+                <tr>
+                    <th>Product Description</th>
+                    <td id="desc1">The Urban Chair Sofa is a modern and chic seating option that combines style and comfort effortlessly. Its sleek design and compact size make it ideal for urban living spaces or as an accent piece in any room. The chair sofa features clean lines, contemporary upholstery, and a sturdy frame, ensuring both durability and aesthetic appeal. With its plush cushioning and ergonomic design, the Urban Chair Sofa offers a cozy and inviting seating experience. Whether you're enjoying a cup of coffee or reading your favorite book, this chair sofa provides the perfect spot to relax and unwind. Its versatility allows it to blend seamlessly with various interior styles, making it a versatile addition to your home decor.</td>
+                    <td id="desc2">The Frea Sofa is a modern and trendy choice that brings a sense of style and sophistication to your living space. Its unique design features sleek lines and a distinctive shape, making it a statement piece in any room. The sofa is crafted with high-quality materials, ensuring durability and longevity. Its plush cushioning and ergonomic design provide optimum comfort and support. Available in a range of vibrant colors and upholstery options, the Frea Sofa allows you to showcase your personal style and create a contemporary focal point in your home.</td>
+                </tr>
+                <tr>
+                    <th>Product Brand</th>
+                    <td id="brand1">DURIAN Furniture</td>
+                    <td id="brand2">DURIAN Furniture</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js "></script>
+</body>
+
+</html>
+
+<script src="data.js"></script>
+<script src="main.js"></script>

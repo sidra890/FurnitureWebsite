@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Furniture Store</title>
+    <meta name="FK Royal Furniture" content="Discover a world of elegant and high-quality furniture that will transform your living space into a haven of comfort and style. At Our Furniture Shop, we offer a wide range of furniture options to suit every taste and budget."/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <style>
+        td>img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+        }
+    </style>
+    
+</head>
+
+<body>
+ <!-- navbar start -->
+ <nav>
+  <div class="logo">
+    <img src="./images/Durable Furniture logo.png" alt="logo" style="width: 80px; height: 50px;">
+  <a href="#" class="navbar-brand"><span>Durable</span> Furniture</a>
+  </div>
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="#aboutus">ABOUT US</a></li>
+    <li><a href="Products.html">PRODUCTS</a></li>
+    <li><a href="contact.html">CONTACT US</a></li>
+  </ul>
+  <div class="toggle"><span></span><span></span><span></span></div>
+</nav>
+
+<script>
+  const toggleBtn = document.querySelector('.toggle')
+  const menu = document.querySelector('nav ul')
+  toggleBtn.onclick = () => menu.classList.toggle('open')
+</script>
+
+<!-- navbar end -->
+
+
+    <h1 class="display-5 my-5 text-center">Products Comparison</h1>
+    <div class="container">
+        <div class="col-md-9 mx-auto">
+            <table class="table">
+                <tr class="bg-light">
+                    <th>Select Product</th>
+                    <th width="300px">
+                        <select class="form-control" id="select1" onchange="item1(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                    <th width="300px">
+                        <select class="form-control" id="select2" onchange="item2(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Product Image</th>
+                    <td>
+                        <img src="./chairs images/chair7.jpg"
+                            id="img1" alt=" ">
+                    </td>
+                    <td>
+                        <img src="./chairs images/chair8.png"
+                            id="img2" alt=" ">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Product Price</th>
+                    <td id="price1">$169.99</td>
+                    <td id="price2">$99.99</td>
+                </tr>
+                <tr>
+                    <th>Product Description</th>
+                    <td id="desc1">The Basic Seating chair is a versatile and functional addition to any space. Its simple yet practical design makes it suitable for a variety of settings, from offices to living rooms. This chair features a sturdy frame and a comfortable seat, making it a reliable choice for everyday use. The clean lines and understated aesthetics blend seamlessly with different decor styles. Whether you need extra seating for guests or a functional chair for your workspace, the Basic Seating chair delivers functionality without compromising on style. Experience the beauty of simplicity with the Basic Seating chair.</td>
+                    <td id="desc2">The Relaxation Chair is designed to provide a haven of relaxation and tranquility. With its ergonomic design and thoughtful features, this chair promotes ultimate comfort and well-being. It boasts a reclining mechanism, allowing you to adjust the chair to your preferred position. The Relaxation Chair also includes features such as a built-in footrest and padded armrests for enhanced comfort. Sink into the plush cushioning and let go of the day's stress as you enjoy a moment of serenity. Whether you use it in your living room or dedicated relaxation space, the Relaxation Chair offers a luxurious escape from the demands of daily life.</td>
+                </tr>
+                <tr>
+                    <th>Product Brand</th>
+                    <td id="brand1">HABBIT Furniture</td>
+                    <td id="brand2">HABBIT Furniture</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js "></script>
+</body>
+
+</html>
+
+<script src="data.js"></script>
+<script src="main.js"></script>

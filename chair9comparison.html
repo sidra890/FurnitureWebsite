@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Furniture Store</title>
+    <meta name="FK Royal Furniture" content="Discover a world of elegant and high-quality furniture that will transform your living space into a haven of comfort and style. At Our Furniture Shop, we offer a wide range of furniture options to suit every taste and budget."/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <style>
+        td>img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+        }
+    </style>
+    
+</head>
+
+<body>
+ <!-- navbar start -->
+ <nav>
+  <div class="logo">
+    <img src="./images/Durable Furniture logo.png" alt="logo" style="width: 80px; height: 50px;">
+  <a href="#" class="navbar-brand"><span>Durable</span> Furniture</a>
+  </div>
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="#aboutus">ABOUT US</a></li>
+    <li><a href="Products.html">PRODUCTS</a></li>
+    <li><a href="contact.html">CONTACT US</a></li>
+  </ul>
+  <div class="toggle"><span></span><span></span><span></span></div>
+</nav>
+
+<script>
+  const toggleBtn = document.querySelector('.toggle')
+  const menu = document.querySelector('nav ul')
+  toggleBtn.onclick = () => menu.classList.toggle('open')
+</script>
+
+<!-- navbar end -->
+
+
+    <h1 class="display-5 my-5 text-center">Products Comparison</h1>
+    <div class="container">
+        <div class="col-md-9 mx-auto">
+            <table class="table">
+                <tr class="bg-light">
+                    <th>Select Product</th>
+                    <th width="300px">
+                        <select class="form-control" id="select1" onchange="item1(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                    <th width="300px">
+                        <select class="form-control" id="select2" onchange="item2(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Product Image</th>
+                    <td>
+                        <img src="./chairs images/chair9.jpeg"
+                            id="img1" alt=" ">
+                    </td>
+                    <td>
+                        <img src="./chairs images/chair1.jpg"
+                            id="img2" alt=" ">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Product Price</th>
+                    <td id="price1">$129.99</td>
+                    <td id="price2">$99.99</td>
+                </tr>
+                <tr>
+                    <th>Product Description</th>
+                    <td id="desc1">The Casual Armchair is the epitome of laid-back comfort and effortless style. With its relaxed design and casual vibe, this chair creates a cozy and inviting atmosphere. The soft upholstery and plush cushions make it the perfect spot to lounge and unwind. The Casual Armchair features gently sloping armrests and a generous seat, ensuring optimal comfort. Whether you're enjoying a movie night or chatting with friends, this chair provides a comfortable and relaxed seating experience. Add a touch of casual elegance to your space with the Casual Armchair.</td>
+                    <td id="desc2">The Comfort Seat is designed with one thing in mind: providing optimal comfort. This chair is a perfect combination of style and coziness. With its plush cushioning and ergonomic design, it offers a comfortable seating experience. The Comfort Seat features a sleek and modern design that easily complements any interior decor. Whether you need extra seating in the living room or a cozy reading nook in the bedroom, this chair is a versatile addition to your space. Its simple yet stylish appearance, along with its durable construction, ensures long-lasting enjoyment. Sit back, relax, and unwind in the luxurious comfort of the Comfort Seat.</td>
+                </tr>
+                <tr>
+                    <th>Product Brand</th>
+                    <td id="brand1">OAKWOOD Furniture</td>
+                    <td id="brand2">HABBIT Furniture</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js "></script>
+</body>
+
+</html>
+
+<script src="data.js"></script>
+<script src="main.js"></script>

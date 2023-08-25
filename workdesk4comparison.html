@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Furniture Store</title>
+    <meta name="FK Royal Furniture" content="Discover a world of elegant and high-quality furniture that will transform your living space into a haven of comfort and style. At Our Furniture Shop, we offer a wide range of furniture options to suit every taste and budget."/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <style>
+        td>img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+        }
+    </style>
+    
+</head>
+
+<body>
+ <!-- navbar start -->
+ <nav>
+    <div class="logo">
+      <img src="./images/Durable Furniture logo.png" alt="logo" style="width: 80px; height: 50px;">
+    <a href="#" class="navbar-brand"><span>Durable</span> Furniture</a>
+    </div>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="#aboutus">ABOUT US</a></li>
+      <li><a href="Products.html">PRODUCTS</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+    <div class="toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+<script>
+  const toggleBtn = document.querySelector('.toggle')
+  const menu = document.querySelector('nav ul')
+  toggleBtn.onclick = () => menu.classList.toggle('open')
+</script>
+
+<!-- navbar end -->
+
+
+    <h1 class="display-5 my-5 text-center">Products Comparison</h1>
+    <div class="container">
+        <div class="col-md-9 mx-auto">
+            <table class="table">
+                <tr class="bg-light">
+                    <th>Select Product</th>
+                    <th width="300px">
+                        <select class="form-control" id="select1" onchange="item1(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                    <th width="300px">
+                        <select class="form-control" id="select2" onchange="item2(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Product Image</th>
+                    <td>
+                        <img src="./workdesk images/workdesk4.png"
+                            id="img1" alt=" ">
+                    </td>
+                    <td>
+                        <img src="./workdesk images/workdesk5.jpg"
+                            id="img2" alt=" ">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Product Price</th>
+                    <td id="price1">$99.99</td>
+                    <td id="price2">$138.99</td>
+                </tr>
+                <tr>
+                    <th>Product Description</th>
+                    <td id="desc1">The Fresco Study Table is a contemporary and stylish desk designed for modern study spaces. It boasts a minimalist design with clean lines and a sleek finish. The desk offers a wide tabletop that provides ample room for laptops, books, and other study essentials. It also includes built-in storage compartments and shelves to keep your belongings organized and easily accessible. The Fresco Study Table is a perfect blend of functionality and aesthetics, making it an excellent choice for any modern study or home office.</td>
+                    <td id="desc2">The Topwell Compact Desk is a space-saving solution for small rooms or offices. Its compact size allows it to fit seamlessly into tight spaces without compromising on functionality. The desk features a streamlined design with a pull-out keyboard tray and additional shelves for storage. Despite its small footprint, it offers enough space for a computer, paperwork, and other essentials. The Topwell Compact Desk is an ideal choice for those looking to maximize their workspace without sacrificing style.</td>
+                </tr>
+                <tr>
+                    <th>Product Brand</th>
+                    <td id="brand1">PROFINE Furniture</td>
+                    <td id="brand2">OAKWOOD Furniture</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js "></script>
+</body>
+
+</html>
+
+<script src="data.js"></script>
+<script src="main.js"></script>
